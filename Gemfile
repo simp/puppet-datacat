@@ -10,7 +10,6 @@ end
 
 group :development do
   gem 'pry'
-  gem 'pry-debugger'
   gem 'rb-readline'
   gem 'awesome_print'
 end
