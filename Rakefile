@@ -1,11 +1,4 @@
-require 'rubygems'
-require 'bundler/setup'
+require 'simp/rake/pupmod/helpers'
 
-Bundler.require :default
+Simp::Rake::Pupmod::Helpers.new(File.dirname(__FILE__))
 
-require 'rspec/core/rake_task'
-require 'puppetlabs_spec_helper/rake_tasks'
-
-task :default do
-  sh %{rake -T}
-end
